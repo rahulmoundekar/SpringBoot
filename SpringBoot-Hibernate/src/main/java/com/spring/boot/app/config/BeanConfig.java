@@ -1,4 +1,4 @@
-package com.spring.boot.app.service;
+package com.spring.boot.app.config;
 
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;

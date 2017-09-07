@@ -23,7 +23,7 @@ public class CustomerController {
 		List<Customer> listOfCustomers = customerService.getAllCustomers();
 		model.addAttribute("customer", new Customer());
 		model.addAttribute("listOfCustomers", listOfCustomers);
-		return "customerDetails";
+		return "customers";
 	}
 
 	@RequestMapping(value = "/", method = RequestMethod.GET, headers = "Accept=application/json")

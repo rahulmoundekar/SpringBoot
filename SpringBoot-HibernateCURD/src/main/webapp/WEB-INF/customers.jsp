@@ -35,7 +35,7 @@
 							class="form-control input-sm"></form:input></td>
 				</tr>
 				<tr>
-					<td colspan="2"><input type="submit" class="blue-button" /></td>
+					<td colspan="2"><input type="submit" class="btn btn-success" value="Register"/></td>
 				</tr>
 			</table>
 		</form:form>
@@ -56,9 +56,9 @@
 						<td>${customer.customerName}</td>
 						<td>${customer.email}</td>
 						<td><a
-							href="<c:url value='/updateCustomer/${customer.id}' />">Edit</a></td>
+							href="<c:url value='/updateCustomer/${customer.id}' />" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-edit"></span> Edit</a></td>
 						<td><a
-							href="<c:url value='/deleteCustomer/${customer.id}' />">Delete</a></td>
+							href="<c:url value='/deleteCustomer/${customer.id}' />" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-remove"></span> Delete</a></td>
 					</tr>
 				</c:forEach>
 			</table>
